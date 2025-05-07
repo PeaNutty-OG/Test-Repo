@@ -4,8 +4,14 @@ import LogInButton from "../components/LogInButton";
 export default function Home() {
   return (
     <>
-      <LogInButton />
-      <TabBar />
+      <div
+        style={{
+          display: "flex",
+        }}
+      >
+        <LogInButton />
+        <TabBar />
+      </div>
     </>
   );
 }
