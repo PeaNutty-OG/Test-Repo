@@ -1,7 +1,14 @@
-import TabBar from "./components/TabBar";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
 
 function App() {
-  return <TabBar />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
