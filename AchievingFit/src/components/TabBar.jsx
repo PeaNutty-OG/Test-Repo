@@ -8,7 +8,7 @@ export default function TabsSegmentedControls() {
     <Tabs
       aria-label="tabs"
       defaultValue={0}
-      sx={{ bgcolor: "transparent", maxWidth: 300, mx: "auto" }}
+      sx={{ bgcolor: "transparent", maxWidth: 300, mx: "auto", top: -35 }}
     >
       <TabList
         disableUnderline
