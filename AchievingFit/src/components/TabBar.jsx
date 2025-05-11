@@ -8,7 +8,7 @@ export default function TabsSegmentedControls() {
     <Tabs
       aria-label="tabs"
       defaultValue={0}
-      sx={{ bgcolor: "transparent", maxWidth: 300, mx: "auto" }}
+      sx={{ bgcolor: "transparent", mx: "auto" }}
     >
       <TabList
         disableUnderline
@@ -19,11 +19,13 @@ export default function TabsSegmentedControls() {
           bgcolor: "background.level1",
           [`& .${tabClasses.root}[aria-selected="true"]`]: {
             boxShadow: "sm",
-            bgcolor: "background.surface",
+            bgcolor: "focusVisible",
+            color: "white",
           },
         }}
       >
         <Tab disableIndicator>Home</Tab>
+        <Tab disableIndicator>Routines</Tab>
         <Tab disableIndicator>Statistics</Tab>
         <Tab disableIndicator>Macros</Tab>
         <Tab disableIndicator>Profile</Tab>
